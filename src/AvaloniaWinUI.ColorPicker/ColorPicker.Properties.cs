@@ -242,7 +242,7 @@ namespace AvaloniaWinUI.ColorPicker
         // Returns:
         //     The identifier for the Color dependency property.
         public static readonly StyledProperty<Color> ColorProperty =
-            AvaloniaProperty.Register<ColorPicker, Color>(nameof(Color), Colors.White);
+            AvaloniaProperty.Register<ColorPicker, Color>(nameof(Color), Colors.White, defaultBindingMode: Avalonia.Data.BindingMode.TwoWay);
         //
         // Summary:
         //     Identifies the ColorSpectrumComponents dependency property.
